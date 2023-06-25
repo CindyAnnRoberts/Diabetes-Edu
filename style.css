@@ -343,14 +343,58 @@ iframe{
     cursor: pointer;
 }
 #effectsOfDiabetes{
-    /* height: 458px; */
-    background-color: lightsteelblue;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    margin: 0 34px 30px ;
+    gap: 8px;  
+     
+}
+#effectsOfDiabetes h2{
+    color: var(--orange);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    /* text-align: center; */
+    margin-bottom: 6px;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    align-self: start;
+}
+#effectsOfDiabetes p{
+    margin: 0 auto 15px;
+    grid-column: 1/-1;
+    grid-row: 2/3;
 }
 .icon{
-    height: 207px;
-    width: 208px;
-    background-color: lightgoldenrodyellow;
-    margin-bottom: 8px;
+    border: 1px solid var(--grey);
+}
+
+.icon img{
+    max-width: 35%;
+    display: block;
+    margin: 32px auto 10px; 
+}
+.icon p{
+    padding: 0 20px;
+    text-align: center;
+}
+
+.kidney{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.thirsty{
+    grid-column: 2/-1;
+    grid-row: 3/4;
+}
+.bathroomFrequency{
+    grid-column: 1/2;
+    grid-row:4/-1;
+}
+.feelingTired{
+    grid-column: 2/-1;
+    grid-row:4/-1;
 }
 footer{
     background-color: hotpink;
