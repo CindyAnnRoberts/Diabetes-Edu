@@ -315,9 +315,32 @@ iframe{
     margin: 6px 0 30px 35px;
 }
 
-#preventDiabetes{
-    height: 755px;
-    background-color: lightgrey;
+#preventDiabetes img{
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+#preventDiabetes h2{
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto 6px;
+    max-width: 200px;
+}
+#preventDiabetes p{
+   text-align: center;
+   max-width: 350px;
+   margin: 0 auto 15px;
+}
+#preventDiabetes button{
+    background-color: var(--orange);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: #fff;
+    /* margin: 20px auto 35px; */
+    cursor: pointer;
 }
 #effectsOfDiabetes{
     /* height: 458px; */
