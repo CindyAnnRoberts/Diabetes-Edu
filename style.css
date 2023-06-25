@@ -1,0 +1,382 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End CSS RESET */
+:root{
+--grey:#707070;
+--orange:#DF5421;
+}
+
+body{
+font-family: 'Roboto', sans-serif;
+}
+
+p{
+    line-height: 1.37;
+    color: var(--grey);
+}
+#skipToMainContent{
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  opacity: 0
+}
+#skipToMainContent:focus{
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+#wrapper{
+    width: calc(100% - 2rem);
+    max-width: 1280px;
+    min-width: 430px;
+    margin: 0 auto;
+}
+header{
+    background-color:var(--orange);
+    height: 74px;
+    display: flex;
+    justify-content: space-around;
+}
+#brandWrapper{
+    display: flex;
+    align-items: center;
+}
+
+.logoShape{
+    background: #fff;
+    height: 16px;
+    position: relative;
+    width: .75px;
+    margin-right: 8px;
+    transform: rotate(45deg);
+    border-radius: 15px;
+}
+.logoShape::before{
+    background: #fff;
+    content: "";
+    height: 12px;
+    position: absolute;
+    top: 2.5px;
+    right: 3px;
+    width: .75px;
+    margin-bottom: 2.5px;
+    border-radius: 15px;
+}
+.logoShape::after{
+    background: #fff;
+    content: "";
+    height: 12px;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+    width: .75px;
+    margin-bottom: 2.5px;
+    border-radius: 15px;
+}
+#logo{
+    font-size: 1.25rem;
+    color: #fff;
+    text-decoration: none;
+}
+[type="checkbox"]{
+    height: 35px;
+    width: 30px;
+    opacity: 0;
+    position: relative;
+    top: 16px;
+    left: 86px;
+    padding: 10px;
+}
+
+nav{
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    top: 74px;
+    text-align: center;
+    width: 90%;
+}
+nav li{
+    text-decoration: none;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--grey);
+}
+
+nav li:last-child{
+    padding-bottom: 25px;
+}
+
+nav li a{
+    text-decoration: none;
+    width: 100%;
+    color: var(--orange);  
+}
+
+#checkbox:checked ~ nav{
+    transform: translateY(0%);
+    max-height: 290px;
+    background-color: #fff;
+    display: block;
+}
+#checkbox:checked ~ nav a{
+    visibility: visible;
+}
+
+#hamburgerWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    padding: 4px;
+
+}
+.hamburger{
+    background-color: #fff;
+    position: relative;
+    width: 1.5px;
+    height: 20px;
+    margin-right: 8px;
+    transform: rotate(90deg);
+    border-radius: 15px;
+}
+.hamburger:before{
+    content: '';
+    width: 1.5px;
+    height: 20px;
+    border-radius: 15px;
+    position: absolute;
+    right: 5px;
+    background-color: #fff;
+}
+.hamburger:after{
+    content: '';
+    width: 1.5px;
+    height: 20px;
+    border-radius: 15px;
+    position: absolute;
+    left: 5px;
+    background-color: #fff;
+}
+
+h1{
+    font-size: 1.53rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--orange);
+    font-weight: 500;
+    padding: 12px 0 6px;
+}
+
+main p{
+    text-align: center;
+    margin: 0 35px; 
+}
+
+main img{
+    display: block;
+    max-width: 100%;
+    padding: 12px 0 15px;
+}
+
+#whatIsDiabetes h2{
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-left: 35px;
+    padding-bottom: 6px;
+}
+#whatIsDiabetes h3{
+    font-size: 1.125rem;
+    margin-left: 35px;
+    color: var(--orange);
+    padding: 16px 0 5px;
+}
+#whatIsDiabetes h4{
+    margin-left: 35px;
+    padding: 6px 0 5px 0;
+    font-weight: 700;
+    color: var(--grey);
+}
+#whatIsDiabetes p{
+    color: var(--grey);
+    margin-left: 35px;
+    margin-right: 37px;
+}
+#whatIsDiabetes p:nth-child(2){
+    margin-bottom: 10px;
+}
+#whatIsDiabetes button{
+    background-color: var(--orange);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: #fff;
+    margin: 20px 0 43px 35px;
+    cursor: pointer;
+}
+
+#foodIntoEnergy img{
+    display: block;
+    max-width: 100%;
+    transform: scaleX(-1);
+}
+#foodIntoEnergy h3{
+    color: var(--orange);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin: 15px 10px 6px 35px;
+}
+
+#foodIntoEnergy p{
+    padding: 0 35px;
+    margin-bottom: 9px;
+}
+#foodIntoEnergy h4{
+    color: var(--orange);
+    margin: 0 35px 9px;
+}
+
+#pancreas img{
+    display: block;
+    max-width: 100%;
+    margin: 40px 0 15px;
+}
+#pancreas h3{
+    color: var(--orange);
+    font-size: 1.125rem;
+    margin-left: 35px;
+}
+#pancreas p{
+    margin: 6px 0 40px 35px;
+}
+#insulinResistance{
+    height: 455px;
+    background-color: lightskyblue;
+}
+iframe{
+    /* height: 288px; */
+    background-color: antiquewhite;
+    width: 100%;
+    height: 60%;
+    margin: 0 auto;
+}
+
+#preventDiabetes{
+    height: 755px;
+    background-color: lightgrey;
+}
+#effectsOfDiabetes{
+    /* height: 458px; */
+    background-color: lightsteelblue;
+}
+.icon{
+    height: 207px;
+    width: 208px;
+    background-color: lightgoldenrodyellow;
+    margin-bottom: 8px;
+}
+footer{
+    background-color: hotpink;
+    /* height: 245px; */
+}
+.social{
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    margin-bottom: 8px;
+}
+
+@media (min-width:600px){
+    #hamburgerWrapper{
+        display: none;
+    }
+    nav{
+        display: block; 
+        width: 378px;
+       
+        top: 0;
+        background-color: transparent;
+        position: static;
+    }
+    #checkbox:checked ~ nav{
+        background-color: transparent;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid lime;
+    }
+    nav li{
+        padding: 0;
+        border-bottom: 0;
+        /* background-color: transparent; */
+    }
+    nav li:last-child{
+        padding-bottom: 0;
+    }
+    nav li a{
+        color: #fff; 
+    }
+    header{
+        justify-content: space-around;
+        align-items: center;
+    }
+   
+   
+    
+ 
+}
+
+@media (min-width:900px){
+
+}
