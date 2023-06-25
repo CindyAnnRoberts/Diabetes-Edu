@@ -314,7 +314,9 @@ iframe{
 #insulinResistance p{
     margin: 6px 0 30px 35px;
 }
-
+#preventDiabetes{
+    text-align: center;
+}
 #preventDiabetes img{
     max-width: 100%;
     margin-bottom: 15px;
@@ -325,37 +327,35 @@ iframe{
     color: var(--orange);
     font-weight: 700;
     text-align: center;
-    margin: 0 auto 6px;
-    max-width: 200px;
+    margin-bottom: 6px;
 }
 #preventDiabetes p{
+   padding: 0 34px;
    text-align: center;
-   max-width: 350px;
-   margin: 0 auto 15px;
+   margin-bottom: 30px;
 }
+
 #preventDiabetes button{
     background-color: var(--orange);
     border: none;
     border-radius: 20px;
     padding: 10px 15px;
     color: #fff;
-    /* margin: 20px auto 35px; */
-    cursor: pointer;
+    margin: 0 auto 30px;
 }
+
 #effectsOfDiabetes{
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(4, auto);
     margin: 0 34px 30px ;
     gap: 8px;  
-     
 }
 #effectsOfDiabetes h2{
     color: var(--orange);
     font-size: 1.25rem;
     text-transform: uppercase;
     font-weight: 700;
-    /* text-align: center; */
     margin-bottom: 6px;
     grid-column: 1/-1;
     grid-row: 1/2;
@@ -367,13 +367,15 @@ iframe{
     grid-row: 2/3;
 }
 .icon{
-    border: 1px solid var(--grey);
+    border: .8px solid var(--grey);
+    box-shadow: 0 8px 6px -6px var(--grey); 
 }
 
 .icon img{
-    max-width: 35%;
+    max-width: 25%;
     display: block;
-    margin: 32px auto 10px; 
+    margin: 32px auto 10px;
+    
 }
 .icon p{
     padding: 0 20px;
@@ -397,15 +399,52 @@ iframe{
     grid-row:4/-1;
 }
 footer{
-    background-color: hotpink;
-    /* height: 245px; */
+    background-color: var(--orange);
+    text-align: center;
+    padding-bottom: 15px;
 }
-.social{
-    width: 100px;
-    height: 100px;
-    background-color: lightgray;
-    margin-bottom: 8px;
+#logoComponent{
+    padding: 15px 0 5px 22px;
 }
+footer img{
+    width: 35%;
+    display: block;
+    margin: 0 auto;
+}
+address{
+    color: #fff;
+    font-size: 0.67rem;
+    margin-bottom: 5px;
+}
+
+#contactUs{
+    color: #fff;
+    font-size:0.77rem;
+    display: inline-block;
+    margin: 5px 0 15px;
+}
+.eduPurposeOnly{
+    color: #fff;
+    font-size: 0.77rem;
+    text-transform: uppercase;
+    padding: 15px 0 10px;
+}
+.iconCredits{
+    display: block;
+    color: #fff;
+    font-size:0.77rem;
+    padding-bottom: 8px;
+}
+
+#socialMedia{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    column-gap: 25px;
+    max-width: 15%;
+   
+}
+
 
 @media (min-width:600px){
     #hamburgerWrapper{
