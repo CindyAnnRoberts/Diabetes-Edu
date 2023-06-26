@@ -267,6 +267,7 @@ main img{
 #foodIntoEnergy img{
     display: block;
     max-width: 100%;
+    height: auto;
     transform: scaleX(-1);
 }
 #foodIntoEnergy h3{
@@ -450,23 +451,20 @@ address{
     nav{
         display: block; 
         width: 378px;
-       
         top: 0;
         background-color: transparent;
         position: static;
     }
-    #checkbox:checked ~ nav{
+    /* #checkbox:checked ~ nav{
         background-color: transparent;
-    }
+    } */
     nav ul{
         display: flex;
-        justify-content: space-between;
-        border: 1px solid lime;
+        justify-content: space-evenly;
     }
     nav li{
         padding: 0;
         border-bottom: 0;
-        /* background-color: transparent; */
     }
     nav li:last-child{
         padding-bottom: 0;
@@ -474,14 +472,54 @@ address{
     nav li a{
         color: #fff; 
     }
+   
     header{
         justify-content: space-around;
         align-items: center;
     }
    
-   
-    
- 
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-bottom: 20px;
+    }
+    main img{
+        padding: 0 0 20px;
+    }
+
+    h1{
+        font-size: 2.12rem;
+        color: #fff;
+        padding: 0;
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+        z-index: 1000;
+        margin-top: 252.6px;
+    }
+    main p{
+        color: #fff;
+        font-size: 1.1rem;
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+        z-index: 100;
+        margin-top: 291px;
+    }
+    picture{
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+        
+    }
+    picture img{
+        padding: 0;
+    }
+    .overlay{
+        background-color: rgba(0, 0, 0, 0.30);
+        width: 100%;
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+        z-index: 99;
+    }
 }
 
 @media (min-width:900px){
