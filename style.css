@@ -80,7 +80,8 @@ h3, h4{
   opacity: 1;
 }
 #wrapper{
-    max-width: 1280px;
+    /* max-width: 1280px; Desktop Display*/
+    max-width: 647px;
     min-width: 430px;
     margin: 0 auto;
 }
@@ -463,9 +464,7 @@ address{
         background-color: transparent;
         position: static;
     }
-    /* #checkbox:checked ~ nav{
-        background-color: transparent;
-    } */
+
     nav ul{
         display: flex;
         justify-content: space-evenly;
@@ -584,7 +583,6 @@ address{
     }
     #brokenDownProteins{
         grid-column: 1/-1;
-        /* margin-top: 15px; */
     }
     #brokenDownProteins p{
         margin: 0;
@@ -643,5 +641,52 @@ address{
     grid-column: 1/-1;
     grid-row: 8/-1;
    }
+   #preventDiabetes h2, #preventDiabetes p{
+    color: #fff;
+   }
+    #preventDiabetes h2{
+    padding-top: 30px;
+   }
+    #preventDiabetes button{
+    background-color: none;
+    border: 1px solid#fff;
+    }
 
+   #preventDiabetes{
+    background-color: var(--orange);
+    margin-bottom: 30px;
+    padding-top: 25px;
+    }
+    #preventDiabetes img{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    }
 }
+
+/* @media(min-width:673px){
+    #preventDiabetes{
+        background-color: var(--orange);
+        margin-bottom: 30px;
+        padding-top: 25px;
+    }
+    #preventDiabetes img{
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+
+    }
+    #preventDiabetes h2, #preventDiabetes p{
+        color: #fff;
+    }
+    #preventDiabetes h2{
+        padding-top: 30px;
+    }
+    #preventDiabetes button{
+        background-color: none;
+        border: 1px solid#fff;
+    }
+} */
+
+/* @media(min-width:680px){ 
+} */
