@@ -532,16 +532,36 @@ address{
 }
 
 @media (min-width:631px){
+    #wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+    header{
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
     h1{
         margin-top: 178px; 
+    }
+    main{
+        grid-column: 1/-1;
+        grid-row: 2/3;
     }
     main p{
         margin-top: 216.4px;
     }
+    #whatIsDiabetes{
+        grid-column: 1/2;
+        grid-row: 3/5;
+    }
     #foodIntoEnergy{
+        grid-column: 1/-1;
+        grid-row: 5/6;
+
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr 100px;
+        grid-template-rows: auto 100px;
         border: 1px solid var(--grey);
         gap: 5px;
     }
@@ -567,6 +587,25 @@ address{
     #brokenDownProteins h4{
         margin: 0;
     }
-   
+    #pancreas{
+        grid-column: 2/-1;
+        grid-row: 3/4;
+    }
+    #insulinResistance{
+        grid-column: 2/-1;
+        grid-row: 4/5;
+    }
+    #effectsOfDiabetes{
+        grid-column: 1/-1;
+        grid-row: 7/8;
+    }
+    #preventDiabetes{
+        grid-column: 1/-1;
+        grid-row: 6/7;
+    }
+   footer{
+    grid-column: 1/-1;
+    grid-row: 8/-1;
+   }
 
 }
