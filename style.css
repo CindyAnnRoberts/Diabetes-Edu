@@ -135,11 +135,13 @@ header{
     text-decoration: none;
 }
 [type="checkbox"]{
-    width: 20px;
+    width: 30px;
     opacity: 0;
     position: relative;
-    top: 2px;
-    left: 90px;
+    /* top: 2px; */
+    /* left: 65px; */
+    left: 20%;
+    padding: 4px 6px;
 }
 
 nav{
@@ -192,9 +194,10 @@ nav li a{
     position: relative;
     width: 1.5px;
     height: 20px;
-    margin-right: 8px;
+    /* margin-right: 8px; */
     transform: rotate(90deg);
     border-radius: 15px;
+    left: 20%;
 }
 .hamburger:before{
     content: '';
@@ -451,18 +454,26 @@ address{
     max-width: 15%;
    
 }
-/*** SUPERFOODS SECTION ***/
-/* ************************ */
+/**************************/
+/****SUPERFOODS SECTION ***/
+/**************************/
 #superfoodsContainer{
    margin: 0 34px;
-
 }
-#superfoods h2{
-    font-size: 1.25rem;
+#superfoods h1{
+    font-size: 1.53rem;
     text-transform: uppercase;
     color: var(--orange);
     font-weight: 700;
     padding: 12px 0 8px;
+    text-align: left;
+}
+#superfoods h4{
+    font-weight: 700;
+    color: var(--grey);
+}
+#superfoods p {
+    margin-bottom: 17px;
 }
 #superfoodsImages{
     display: grid;
@@ -471,12 +482,11 @@ address{
     gap: 17px;
     justify-items: center;
     align-items: center;
-   
+    margin-bottom: 17px;
 }
 #superfoodsImages img{
     width: 100%;
     height: 100%;
-    
     object-fit: cover;
     overflow: hidden;
     display: block;
@@ -486,31 +496,91 @@ address{
     grid-row: 1/-1;
     transform: scaleX(-1);
 }
+#tomatoBasedSoup img{
+    min-height: 293px;
+    max-height: 100%;
+}
 #salmon{
     grid-column: 2/-1;
     grid-row: 1/2;
-
-   
 }
 #salad{
     grid-column: 2/-1;
     grid-row: 2/-1;
-   
+}
+#mealPlanning{
+    padding-bottom: 15px;
+}
+#mealPlanning h1{
+    font-weight: 1.53;
+    text-transform: uppercase;
+    color: var(--orange);
+    font-weight: 700;
+    margin: 17px 0 7px;  
+}
+#mealPlanning h2{
+    color: var(--orange);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 6px;
+}
+#mealPlanning > p{
+    margin-bottom: 15px;
 }
 
-/* ************************ */
+/**************************/
+/**** EXERCISE SECTION ***/
+/**************************/
 
+#exerciseContainer{
+   margin: 0 34px 30px; 
+}
+#exercise h1{
+    font-size: 1.53rem;
+    color: var(--orange);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 13px 0 9px;
+    text-align: left;
+}
+#exercise img{
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+#exercise h2{
+    font-size: 1.25rem;
+    color: var(--orange);
+    text-transform: uppercase;
+    padding: 13px 0 9px;
+}
 
+/**************************/
+/**** RESOURCES SECTION ***/
+/**************************/
+#resourcesWrapper{
+    margin: 0 34px;
+}
+#resourceLinks{
+    margin-bottom: 15px;
+}
+#resourceLinks h2{
+    font-size: 1.53rem;
+    margin: 13px 0 8px;
+    text-align: left;
+    color: var(--orange);
+    text-transform: uppercase;
+    font-weight: 700;
+    }
+#resourceLinks a{
+    color: var(--grey);
+    display: block;
+    padding-bottom: 10px;
+}
 
-
-/*** EXERCISE SECTION ***/
-/* ************************ */
-
-
-
-/* ************************ */
-
-
+/**************************/
+/****** MEDIA QUERIES *****/
+/**************************/
 
 @media (min-width:600px){
     #brandWrapper{
@@ -592,7 +662,22 @@ address{
     button{
         cursor: pointer;
     }
-   
+
+/**************************/
+/*** SUPERFOODS SECTION ***/
+/**************************/
+
+#superfoods h1{
+    margin-top: 0;
+}
+
+/**************************/
+/*** EXERCISE SECTION ***/
+/**************************/
+#exercise h1{
+    margin-top: 0;
+}
+
 }
 
 @media (min-width:631px){
