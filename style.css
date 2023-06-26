@@ -77,7 +77,6 @@ p{
   opacity: 1;
 }
 #wrapper{
-    /
     max-width: 1280px;
     min-width: 430px;
     margin: 0 auto;
@@ -130,13 +129,11 @@ header{
     text-decoration: none;
 }
 [type="checkbox"]{
-    height: 25px;
-    /* width: 160px; */
-    /* opacity: 0; */
+    width: 20px;
+    opacity: 0;
     position: relative;
-    top: 16px;
-    left: 100px;
-    /* padding: 10px; */
+    top: 2px;
+    left: 90px;
 }
 
 nav{
@@ -145,8 +142,9 @@ nav{
     position: absolute;
     top: 74px;
     text-align: center;
-    width: 90%;
+    width: 100vw;
 }
+
 nav li{
     text-decoration: none;
     padding: 20px 0;
@@ -178,7 +176,8 @@ nav li a{
     flex-direction: column;
     justify-content: center;
     cursor: pointer;
-    padding: 4px;
+    padding: 6px;
+  
 
 }
 .hamburger{
@@ -220,7 +219,7 @@ h1{
 
 main p{
     text-align: center;
-    margin: 0 35px; 
+    padding: 0 35px; 
 }
 
 main img{
@@ -251,8 +250,7 @@ main img{
 }
 #whatIsDiabetes p{
     color: var(--grey);
-    margin-left: 35px;
-    margin-right: 37px;
+    padding: 0 35px;
 }
 #whatIsDiabetes p:nth-child(2){
     margin-bottom: 10px;
@@ -260,10 +258,10 @@ main img{
 #whatIsDiabetes button{
     background-color: var(--orange);
     border: none;
-    border-radius: 40px;
-    padding: 15px 24px;
+    border-radius: 3px;
+    padding: 12px 22px;
     color: #fff;
-    margin: 16px 0 43px 35px;
+    margin: 16px 0 30px 35px;
 }
 
 #foodIntoEnergy img{
@@ -275,6 +273,7 @@ main img{
     color: var(--orange);
     font-size: 1.25rem;
     text-transform: uppercase;
+    font-weight: 700;
     margin: 15px 10px 6px 35px;
 }
 
@@ -298,7 +297,8 @@ main img{
     margin-left: 35px;
 }
 #pancreas p{
-    margin: 6px 0 40px 35px;
+    margin: 6px 0 40px;
+    padding: 0 35px;
 }
 
 iframe{
@@ -313,11 +313,10 @@ iframe{
     margin: 0 0 6px 35px;
 }
 #insulinResistance p{
-    margin: 6px 0 30px 35px;
+    margin: 6px 0 30px;
+    padding: 0 35px;
 }
-/* #preventDiabetes{
-    text-align: center;
-} */
+
 #preventDiabetes img{
     max-width: 100%;
     margin-bottom: 15px;
@@ -326,22 +325,20 @@ iframe{
     font-size: 1.25rem;
     text-transform: uppercase;
     color: var(--orange);
-    font-weight: 700;
     margin: 0 0 6px 35px;
 }
 #preventDiabetes p{
    padding: 0 34px;
-   /* text-align: center; */
-   margin-bottom: 30px;
+   margin-bottom: 20px;
 }
 
 #preventDiabetes button{
     background-color: var(--orange);
     border: none;
-    border-radius: 40px;
-    padding: 15px 20px;
+    border-radius: 3px;
+    padding: 12px 22px;
     color: #fff;
-    margin: 16px 0 43px 35px;
+    margin: 0 0 43px 35px;
 }
 
 #effectsOfDiabetes{
