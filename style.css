@@ -84,6 +84,7 @@ h3, h4{
     max-width: 647px;
     min-width: 430px;
     margin: 0 auto;
+    
 }
 header{
     background-color:var(--orange);
